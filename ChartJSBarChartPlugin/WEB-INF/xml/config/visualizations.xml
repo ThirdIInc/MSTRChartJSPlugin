@@ -1,0 +1,7 @@
+<visualizations>
+    <visualization-list name="ajax" show-in-web="true" view-mode="51">
+        <visualization attribute-minimum="1" desc="ChartJSBarChartPlugin" drop-zones="plugins.ChartJSBarChartPlugin.ChartJSBarChartPluginDropZones"
+                       editor-model="plugins.ChartJSBarChartPlugin.ChartJSBarChartPluginEditorModel" is-mojo="true" metric-minimum="1"
+                       scope="19" style-name="ChartJSBarChartPlugin" widget-type="7"/>
+    </visualization-list>
+</visualizations>
