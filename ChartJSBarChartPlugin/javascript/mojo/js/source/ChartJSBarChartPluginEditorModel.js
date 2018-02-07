@@ -1,6 +1,6 @@
 (function () {
-    if (!mstrmojo.plugins.D3WordCloud) {
-        mstrmojo.plugins.D3WordCloud = {};
+    if (!mstrmojo.plugins.ChartJSBarChart) {
+        mstrmojo.plugins.ChartJSBarChart = {};
     }
 
     mstrmojo.requiresCls(
@@ -10,12 +10,12 @@
 
     var $WT = mstrmojo.vi.models.editors.CustomVisEditorModel.WIDGET_TYPE;
 
-    mstrmojo.plugins.D3WordCloud.D3WordCloudEditorModel = mstrmojo.declare(
+    mstrmojo.plugins.ChartJSBarChart.ChartJSBarChartEditorModel = mstrmojo.declare(
         mstrmojo.vi.models.editors.CustomVisEditorModel,
         null,
         {
-            scriptClass: "mstrmojo.plugins.D3WordCloud.D3WordCloudEditorModel",
-            cssClass: "d3wordcloudeditormodel",
+            scriptClass: "mstrmojo.plugins.ChartJSBarChart.ChartJSBarChartEditorModel",
+            cssClass: "d3wordclouddropzones",
             getCustomProperty: function getCustomProperty() {
                 var myViz = this.getHost();
                 var isScale = false;
@@ -186,4 +186,4 @@
             }
         })
 }());
-//@ sourceURL=D3WordCloudEditorModel.js
+//@ sourceURL=ChartJSBarChartPluginEditorModel.js
