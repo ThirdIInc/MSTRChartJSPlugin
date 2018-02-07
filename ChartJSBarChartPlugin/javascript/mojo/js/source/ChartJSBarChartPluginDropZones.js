@@ -1,6 +1,6 @@
 (function () {
-    if (!mstrmojo.plugins.D3WordCloud) {
-        mstrmojo.plugins.D3WordCloud = {};
+    if (!mstrmojo.plugins.ChartJSBarChart) {
+        mstrmojo.plugins.ChartJSBarChart = {};
     }
 
     mstrmojo.requiresCls(
@@ -8,11 +8,11 @@
         "mstrmojo.array"
     );
 
-    mstrmojo.plugins.D3WordCloud.D3WordCloudDropZones = mstrmojo.declare(
+    mstrmojo.plugins.ChartJSBarChart.ChartJSBarChartDropZones = mstrmojo.declare(
         mstrmojo.vi.models.CustomVisDropZones,
         null,
         {
-            scriptClass: "mstrmojo.plugins.D3WordCloud.D3WordCloudDropZones",
+            scriptClass: "mstrmojo.plugins.ChartJSBarChart.ChartJSBarChartDropZones",
             cssClass: "d3wordclouddropzones",
             getCustomDropZones: function getCustomDropZones() {
                 var ENUM_ALLOW_DROP_TYPE = mstrmojo.vi.models.CustomVisDropZones.ENUM_ALLOW_DROP_TYPE;
