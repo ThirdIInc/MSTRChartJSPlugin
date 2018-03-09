@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE StyleCatalog SYSTEM "styleCatalog.dtd">
+<StyleCatalog name="Empty style catalog" version="2.0">
+  <TransformDefns>
+    <TransformDefn class="com.customclasses.transforms.ComboChartWidgetPropertiesTransform" name="ComboChartWidgetPropertiesTransform"/>
+    <TransformDefn class="com.customclasses.transforms.DataGridJSONFormat" name="DataGridJSONFormat"/>
+  </TransformDefns>
+  <Styles>
+    <Style name="ChartJSBarLineComboChart" transform="ReportAjaxMojoVisualizationTransform">
+      <ActualParameters>
+        <ActualParameter name="documentStyle" value="RWGridJsonStyle"/>
+        <ActualParameter name="reportXMLStyle" value="DataGridStyle"/>
+        <ActualParameter name="mojoClassName" value="plugins.ChartJSBarLineComboChart.ChartJSBarLineComboChart"/>
+      </ActualParameters>
+      <Layouts>
+        <Layout layout_source="AppLayoutSourceFile"><![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]></Layout>
+      </Layouts>
+    </Style>
+    <Style description="" name="ComboChartWidgetPropertiesStyle" transform="ComboChartWidgetPropertiesTransform">
+      <Layouts>
+        <Layout layout_source="AppLayoutSourceFile"><![CDATA[@ChartJSBarLineComboChart:/WEB-INF/xml/layouts/ComboChartWidgetPropertiesLayout.xml]]></Layout>
+      </Layouts>
+    </Style>
+    <Style description="" name="DataGridStyle" transform="DataGridJSONFormat"/>
+  </Styles>
+</StyleCatalog>
