@@ -1,5 +1,5 @@
 <visualizations>
   <visualization-list name="ajax" show-in-web="true" view-mode="51">
-    <visualization attribute-minimum="0" desc="ChartJS Pie Chart" drop-zones="plugins.ChartJSPieChart.ChartJSPieChartDropZones" editor-model="plugins.ChartJSPieChart.ChartJSPieChartEditorModel" is-mojo="true" metric-minimum="1" propsEditor="DonutChartWidgetPropertiesStyle" scope="19" style-name="ChartJSPieChart" widget-type="7"/>
+    <visualization attribute-minimum="0" desc="ChartJS Pie Chart" drop-zones="plugins.ChartJSPieChart.ChartJSPieChartDropZones" editor-model="plugins.ChartJSPieChart.ChartJSPieChartEditorModel" is-mojo="true" metric-minimum="1" propsEditor="PieChartWidgetPropertiesStyle" scope="19" style-name="ChartJSPieChart" widget-type="7"/>
   </visualization-list>
 </visualizations>

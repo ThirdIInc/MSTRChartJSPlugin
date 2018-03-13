@@ -16,7 +16,7 @@
         <Layout layout_source="AppLayoutSourceFile"><![CDATA[/WEB-INF/xml/layouts/MojoVisualizationLayout.xml]]></Layout>
       </Layouts>
     </Style>
-    <Style description="" name="DonutChartWidgetPropertiesStyle" transform="DonutChartWidgetPropertiesTransform">
+    <Style description="" name="PieChartWidgetPropertiesStyle" transform="PieChartWidgetPropertiesTransform">
       <Layouts>
         <Layout layout_source="AppLayoutSourceFile"><![CDATA[@ChartJSPieChart:/WEB-INF/xml/layouts/DonutChartWidgetPropertiesLayout.xml]]></Layout>
       </Layouts>
