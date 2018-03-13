@@ -88,14 +88,14 @@
 								$("#pieChartError").append("Insuffiecient data.");	 
 							}
 						}else{
-							$("#pieChartError").append("Datalist should not contains any negative value.");
+							$("#pieChartError").append("Datalist should not contain any negative value.");
 						}
 					}else{
 						$("#pieChartError").append("Grid structure is not appropriate. Please refer README file.");
 					}		
 				}catch(err){
 					console.log(err);
-					$("#pieChartError").append("Something went wrong. Open console to identify an error.");
+					$("#pieChartError").append("Something went wrong.");
 				}
 				
 				function renderHtml(xDataList, yDataList, xAxisLabel, graphTitle, formattedValueList, sizeOfData) {
