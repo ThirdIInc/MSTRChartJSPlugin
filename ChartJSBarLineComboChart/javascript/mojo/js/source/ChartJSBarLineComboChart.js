@@ -85,7 +85,14 @@
 						var formattedValueList = getFormattedDataListFromJson(dataJson,null); 
 						var formattedValueList1 = getFormattedDataListFromJson(dataJson,1);
 						var firstRow = this.model.data.data.rows[0].row;
-						var graphTitle = Object.keys(firstRow)[1] + " & " +Object.keys(firstRow)[3];
+						var graphTitle = "";
+						if(Object.keys(firstRow)[1] != undefined && Object.keys(firstRow)[1] != null && Object.keys(firstRow)[1] != ""){
+						    graphTitle = Object.keys(firstRow)[1];
+						}
+						if(Object.keys(firstRow)[2] != undefined && Object.keys(firstRow)[2] != null && Object.keys(firstRow)[2] != ""){
+						    graphTitle = graphTitle + "& " +Object.keys(firstRow)[1];
+						}
+						
 						var xAxisLabel = Object.keys(firstRow)[0];
 						var fillColorArray = getColorArrayForGraph(dataJson.length);
 						if(xDataList != undefined && !jQuery.isEmptyObject(xDataList) && yDataList != undefined && !jQuery.isEmptyObject(yDataList)){
