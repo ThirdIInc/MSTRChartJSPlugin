@@ -1,5 +1,0 @@
-<visualizations>
-  <visualization-list name="ajax" show-in-web="true" view-mode="51">
-    <visualization attribute-minimum="0" desc="ChartJS Bar-Line Combo Chart" drop-zones="plugins.ChartJSBarLineComboChart.ChartJSBarLineComboChartDropZones" editor-model="plugins.ChartJSBarLineComboChart.ChartJSBarLineComboChartEditorModel" is-mojo="true" metric-minimum="1" propsEditor="ComboChartWidgetPropertiesStyle" scope="19" style-name="ChartJSBarLineComboChart" widget-type="7"/>
-  </visualization-list>
-</visualizations>

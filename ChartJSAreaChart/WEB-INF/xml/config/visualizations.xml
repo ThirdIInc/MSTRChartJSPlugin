@@ -1,5 +1,0 @@
-<visualizations>
-  <visualization-list name="ajax" show-in-web="true" view-mode="51">
-    <visualization attribute-minimum="0" desc="ChartJS Area Chart" drop-zones="plugins.ChartJSAreaChart.ChartJSAreaChartDropZones" editor-model="plugins.ChartJSAreaChart.ChartJSAreaChartEditorModel" is-mojo="true" metric-minimum="1" propsEditor="AreaChartWidgetPropertiesStyle" scope="19" style-name="ChartJSAreaChart" widget-type="7"/>
-  </visualization-list>
-</visualizations>
