@@ -7,7 +7,7 @@ import com.microstrategy.web.beans.Transformable;
 import com.microstrategy.web.transform.LayoutTransform;
 import com.microstrategy.web.transform.WebTransformException;
 
-public class DonutChartWidgetPropertiesTransform extends VisualizationPropertiesTransform
+public class BarChartWidgetPropertiesTransform extends VisualizationPropertiesTransform
 implements LayoutTransform{
 	
 public static String CLASS_NAME = "customclasses.transforms.MstrTreeGridWidgetPropertiesTransform";

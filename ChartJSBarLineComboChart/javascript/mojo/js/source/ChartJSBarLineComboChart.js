@@ -87,10 +87,18 @@
 						var firstRow = this.model.data.data.rows[0].row;
 						var graphTitle = Object.keys(firstRow)[1] + " & " +Object.keys(firstRow)[3];
 						var xAxisLabel = Object.keys(firstRow)[0];
-						var fillColorArray = getColorArrayForGraph(dataJson.length);
+						var element = this.dataInterface;
+						var barColor = "#9999ff";
+						if(element.data.vp.barColor != ""){
+							barColor = element.data.vp.barColor;
+						}
+						var lineColor = "#0000ff";
+						if(element.data.vp.lineColor != ""){
+							lineColor = element.data.vp.lineColor;
+						}
 						if(xDataList != undefined && !jQuery.isEmptyObject(xDataList) && yDataList != undefined && !jQuery.isEmptyObject(yDataList)){
 							renderHtml(xDataList, yDataList, y1DataList, xAxisLabel, 
-									graphTitle, formattedValueList, formattedValueList1, dataJson.length); 	
+									graphTitle, formattedValueList, formattedValueList1, dataJson.length,barColor,lineColor); 	
 						}else{
 							$("#comboChartError").append("Insuffiecient data.");	 
 						}
@@ -115,7 +123,7 @@
 						}, {
 							type: 'bar',
 							label: '',
-							backgroundColor: fillColorArray,
+							backgroundColor: fillColor,
 							data: yDataList,
 							borderColor: fillColorArray,
 							borderWidth: 2
@@ -123,7 +131,7 @@
 
             	};
 
-				function renderHtml(xDataList, yDataList, y1DataList, xAxisLabel, graphTitle, formattedValueList, formattedValueList1, sizeOfData) {
+				function renderHtml(xDataList, yDataList, y1DataList, xAxisLabel, graphTitle, formattedValueList, formattedValueList1, sizeOfData,barColor,lineColors) {
 							debugger;
 							var fillColorArray = getColorArrayForGraph(dataJson.length);
 							var ctx = document.getElementById("myChart");
@@ -133,14 +141,15 @@
 								       data : {
 								    	      datasets: [{
 									    	            label: '',
-									    	            backgroundColor: fillColorArray,
+									    	            backgroundColor: barColor,
 														data: yDataList,
-														borderColor: fillColorArray,
-														borderWidth: 2
+														borderColor: barColor,
+														borderWidth: 2,
+														opacity : 0.4
 								    	          }, {
 								    	        	    type: 'line',
 								    	        	    label: '',
-														borderColor: fillColorArray[0],
+														borderColor: lineColors,
 														borderWidth: 2,
 														data: y1DataList,
 														fill : false,
@@ -203,6 +212,13 @@
 									});
 				         }
 				
+				function pickColorForBar(element){
+					var barColor1234 = "#0000ff";
+					if(element.data.vp.barColor != ""){
+						barColor1234 = element.data.vp.barColor;
+					}
+					return barColor1234;
+				}
 							
 				/*
 				 * following function returns a list of data which will plot on
@@ -326,7 +342,6 @@
 					}
 					return gridColorArray;
 				}
-                            	
             
             }// end of plot function
         

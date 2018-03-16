@@ -1,0 +1,15 @@
+ <!DOCTYPE mstrlayout:layout SYSTEM "mstrlayout.dtd">
+ <mstrlayout:layout>
+    <div>
+ 
+    <span style="font-weight:bold;">Bar Color &nbsp; <span style="font-weight: normal;">(e.g. #FFFFFF)</span>:</span>
+    <br />
+    <mstrlayout:render name="Textbox">
+       <mstrlayout:argument type="string" value="barColor" />
+    </mstrlayout:render>
+    <br />
+    <br />   
+    
+     
+    </div>
+ </mstrlayout:layout>
