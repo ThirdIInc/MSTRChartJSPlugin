@@ -100,7 +100,7 @@
 				
 				function renderHtml(xDataList, yDataList, xAxisLabel, graphTitle, formattedValueList, sizeOfData) {
 							debugger;
-							var fillColorArray = getColorArrayForGraph();
+							var fillColorArray = getColorArrayForGraph(sizeOfData);
 							var ctx = document.getElementById("myChart");
 							var myChart = new Chart(ctx,
 									{
@@ -198,12 +198,15 @@
 				 * following function generates an array of
 				 * different colors which highlights in bars.
 				 */
-				function getColorArrayForGraph() {
+				function getColorArrayForGraph(size) {
+					var colorArray = [];
+					//for (var i = 0; i < size; i++) {
 					colorArray.push("#EE6E85");
 					colorArray.push("#54A1E5");
 					colorArray.push("#E7E9ED");
 					colorArray.push("#F8CF6B");
 					colorArray.push("#6ABEBF");
+					//}
 					return colorArray;
 				}
 
