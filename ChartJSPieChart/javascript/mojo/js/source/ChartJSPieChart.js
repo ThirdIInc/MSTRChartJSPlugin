@@ -100,18 +100,17 @@
 				
 				function renderHtml(xDataList, yDataList, xAxisLabel, graphTitle, formattedValueList, sizeOfData) {
 							debugger;
-							var fillColorArray = getColorArrayForGraph(sizeOfData);
+							var fillColorArray = getColorArrayForGraph();
 							var ctx = document.getElementById("myChart");
 							var myChart = new Chart(ctx,
 									{
 										type : 'pie',
 										data : {
-											labels : [],
+											labels : xDataList,
 											datasets : [ {
 												label : '',
 												data : yDataList,
 												backgroundColor : fillColorArray,
-												borderColor : getBorderColorArray(sizeOfData),
 												borderWidth : 3
 											} ]
 										},
@@ -134,7 +133,7 @@
 											},
 											legend : {
 												labels : {
-													boxWidth : 0
+													
 												}
 											}
 										}
@@ -199,11 +198,12 @@
 				 * following function generates an array of
 				 * different colors which highlights in bars.
 				 */
-				function getColorArrayForGraph(size) {
-					var colorArray = [];
-					for (var i = 0; i < size; i++) {
-						colorArray.push(randomColorGenerator());
-					}
+				function getColorArrayForGraph() {
+					colorArray.push("#EE6E85");
+					colorArray.push("#54A1E5");
+					colorArray.push("#E7E9ED");
+					colorArray.push("#F8CF6B");
+					colorArray.push("#6ABEBF");
 					return colorArray;
 				}
 
